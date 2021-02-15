@@ -34,7 +34,8 @@
 //1, The if statement is irrelevant but I really don't know why. So, the answer is 'Professor Plum'
 
 
-
+//--------------------------------------------------------------------------------------------------
+//Episode 1
 const scenario = {
   murderers: "Harrison",
   room: "Bedroom",
@@ -53,9 +54,42 @@ const changeScenario = function() {
 } 
 
 const declareWeapon = function() {
-  return `The weapon is ${scenario.weapon}.`
+  return `The weapon is ${scenario.weapon} the room is ${scenario.room}.`
 }
 
 changeScenario();
 const verdict = declareWeapon();
 console.log(verdict);
+
+
+
+//Episode 2
+let weapon = "Candle Stick"
+
+const declareWeaponOfMurderer = function() {
+  let weapon = "Pen"
+  return `The murderer weapon is ${weapon}`
+}
+
+let murdererWeapon = declareWeaponOfMurderer();
+console.log(murdererWeapon);
+
+
+//Episode 3 
+const scenarioOne = {
+  name: 'Big John',
+  room: 'kitchen',
+  weapon: 'hammer'
+}
+
+const changeScenarioOne = function() {
+  scenarioOne.name = "Big Ail"
+}
+
+const declareMurderer = function () {
+  return `The murderer is ${scenarioOne.name}`
+}
+
+changeScenarioOne();
+const verdictTwo = declareMurderer();
+console.log(verdictTwo);
